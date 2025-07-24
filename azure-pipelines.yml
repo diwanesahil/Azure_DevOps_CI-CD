@@ -6,6 +6,8 @@
 trigger:
 - main
 
+#Link variable group
+
 variables:
 - group: TerraformBackendConfig
 - group: Input_Variables
