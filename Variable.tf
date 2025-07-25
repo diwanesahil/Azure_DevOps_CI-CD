@@ -23,6 +23,6 @@ variable "admin_username" {
 variable "admin_password" {
   type = string
   description = "Admin password for the VM"
-  sensitive = false
+  sensitive = true
   
 }
