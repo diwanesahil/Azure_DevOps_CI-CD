@@ -11,6 +11,7 @@ trigger:
 variables:
 - group: TerraformBackendConfig
 - group: Input_Variables
+- group: keyvaultsecrets
 
 stages:
 - stage: Build
