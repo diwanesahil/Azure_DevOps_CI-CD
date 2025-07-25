@@ -15,7 +15,7 @@ resource "azurerm_windows_virtual_machine" "windowsVM" {
   name                = "WindowsVM"
   resource_group_name = azurerm_resource_group.prodrg.name
   location            = azurerm_resource_group.prodrg.location
-  size                = "Standard_DS1_v2"
+  size                = "Standard_D2s_v3"
   admin_username      = var.admin_username
   admin_password      = var.admin_password
   
