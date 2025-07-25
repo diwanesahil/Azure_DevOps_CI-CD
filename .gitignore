@@ -1,5 +1,5 @@
 .terraform\*
-vnet.tf 
+
 .terraform.lock.hcl
 LICENSE.txt
 terraform-provider-azurerm_v4.37.0_x5.exe
