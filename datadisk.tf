@@ -1,4 +1,4 @@
-resource "azurerm_managed_disk" "DataDisk1" {
+/*resource "azurerm_managed_disk" "DataDisk1" {
   name                 = "DataDisk1"
   location             = azurerm_resource_group.prodrg.location
   resource_group_name  = azurerm_resource_group.prodrg.name
@@ -23,4 +23,4 @@ resource "azurerm_virtual_machine_data_disk_attachment" "diskattachment" {
         azurerm_managed_disk.DataDisk1
     ]
   
-}
+}*/
