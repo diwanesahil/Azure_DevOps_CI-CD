@@ -7,14 +7,16 @@ resource "azurerm_network_interface" "secondarynic" {
     name                          = "SecondaryNICIPConfig"
     subnet_id                     = azurerm_subnet.ProductionSubnet.id
     private_ip_address_allocation = "Dynamic"
+    primary = true
 
       }
     ip_configuration {
     name                          = "SecondaryNICIPConfignew"
     subnet_id                     = azurerm_subnet.ProductionSubnet.id
     private_ip_address_allocation = "Dynamic"
+    primary = false
     
-   
+      
     }
 
   tags = {
