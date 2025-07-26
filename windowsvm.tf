@@ -21,6 +21,7 @@ resource "azurerm_windows_virtual_machine" "windowsVM" {
   
   network_interface_ids = [
     azurerm_network_interface.windowsVMNIC.id,
+    azurerm_network_interface.secondarynic.id
   ]
 
   os_disk {
