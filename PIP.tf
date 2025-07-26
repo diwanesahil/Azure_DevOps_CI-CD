@@ -3,6 +3,7 @@ resource "azurerm_public_ip" "ipconfig1-pip" {
   location            = azurerm_resource_group.prodrg.location
   resource_group_name = azurerm_resource_group.prodrg.name
   allocation_method   = "Static"
+  depends_on = [ azurerm_network_interface.secondarynic ]
   
 }
 
@@ -11,6 +12,7 @@ resource "azurerm_public_ip" "ipconfig2-pip" {
   location            = azurerm_resource_group.prodrg.location
   resource_group_name = azurerm_resource_group.prodrg.name
   allocation_method   = "Static"
+    depends_on = [ azurerm_network_interface.secondarynic ]
   
 }
 
@@ -19,6 +21,7 @@ resource "azurerm_public_ip" "ipconfig3-pip" {
   location            = azurerm_resource_group.prodrg.location
   resource_group_name = azurerm_resource_group.prodrg.name
   allocation_method   = "Static"
+    depends_on = [ azurerm_network_interface.secondarynic ]
   
 }
 
@@ -27,6 +30,7 @@ resource "azurerm_public_ip" "ipconfig4-pip" {
   location            = azurerm_resource_group.prodrg.location
   resource_group_name = azurerm_resource_group.prodrg.name
   allocation_method   = "Static"
+    depends_on = [ azurerm_network_interface.secondarynic ]
   
 }
 
@@ -35,5 +39,6 @@ resource "azurerm_public_ip" "ipconfig5-pip" {
   location            = azurerm_resource_group.prodrg.location
   resource_group_name = azurerm_resource_group.prodrg.name
   allocation_method   = "Static"
+    depends_on = [ azurerm_network_interface.secondarynic ]
   
 }
