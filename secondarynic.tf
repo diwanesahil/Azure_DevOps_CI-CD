@@ -27,6 +27,7 @@ resource "azurerm_network_interface" "secondarynic" {
     subnet_id                     = azurerm_subnet.ProductionSubnet.id
     private_ip_address_allocation = "Dynamic"
     primary = false
+    public_ip_address_id = azurerm_public_ip.ipconfig3-pip.id
     
       
     }   
@@ -35,6 +36,7 @@ resource "azurerm_network_interface" "secondarynic" {
     subnet_id                     = azurerm_subnet.ProductionSubnet.id
     private_ip_address_allocation = "Dynamic"
     primary = false
+    public_ip_address_id = azurerm_public_ip.ipconfig4-pip.id
    
       
     }
