@@ -1,4 +1,4 @@
-resource "azurerm_network_interface" "secondarynic" {
+/*resource "azurerm_network_interface" "secondarynic" {
   name                = "SecondaryNIC"
   location            = azurerm_resource_group.prodrg.location
   resource_group_name = azurerm_resource_group.prodrg.name
@@ -54,4 +54,4 @@ resource "azurerm_network_interface" "secondarynic" {
   }
   
   
-}
+}*/
