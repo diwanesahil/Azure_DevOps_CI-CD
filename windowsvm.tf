@@ -1,4 +1,4 @@
-/*resource "azurerm_network_interface" "windowsVMNIC" {
+resource "azurerm_network_interface" "windowsVMNIC" {
   name                = "WindowsVMNIC"
   location            = azurerm_resource_group.prodrg.location
   resource_group_name = azurerm_resource_group.prodrg.name
@@ -21,7 +21,7 @@ resource "azurerm_windows_virtual_machine" "windowsVM" {
   
   network_interface_ids = [
     azurerm_network_interface.windowsVMNIC.id,
-    azurerm_network_interface.secondarynic.id
+    
   ]
 
   os_disk {
